@@ -48,10 +48,8 @@ jobs:
           name: node-app
 
       - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'testc3angular'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1264F2347B6248668735CD0A6FD11088 }}
-          package: .
+          app-name: 'hello-world-app-to-delete'
+          publish-profile: $
+          package: ./dist/hello-world-app
