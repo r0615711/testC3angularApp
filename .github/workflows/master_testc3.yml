@@ -62,5 +62,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'hello-world-app-to-delete'
-          publish-profile: ${{ secrets.PUBLISH_PROFILE_AZURE }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ./dist/hello-world-app
